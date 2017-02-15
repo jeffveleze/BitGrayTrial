@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.0.1)
+  - AlamofireObjectMapper (4.0.0):
+    - Alamofire (~> 4.0)
+    - ObjectMapper (~> 2.0)
+  - ObjectMapper (2.1.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - AlamofireObjectMapper (~> 4.0)
+  - ObjectMapper (~> 2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AlamofireObjectMapper: 9faa3ce5a240efda1b209009a2d6e1e949227abc
+  ObjectMapper: e5e0f8aef8590fc2ddcde7f27eddb255863ee6e9
+
+PODFILE CHECKSUM: 9d0f7b2e06ab17e566d1259ff515e5dcccdfd1c3
+
+COCOAPODS: 1.1.0.rc.3

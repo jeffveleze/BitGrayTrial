@@ -1,0 +1,6 @@
+framework module Pods_BitGrayTrialUITests {
+  umbrella header "Pods-BitGrayTrialUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

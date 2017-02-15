@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A420AA9893A5861F675DC11 /* Pods_BitGrayTrial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C38A646C3DBFC48A261FB4 /* Pods_BitGrayTrial.framework */; };
+		4C8611041E53A3B600E75F99 /* AnotationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8611031E53A3B600E75F99 /* AnotationHelper.swift */; };
+		4CB60EAE1E54DF4A000D1FA9 /* ExtraViewsOnMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB60EAD1E54DF4A000D1FA9 /* ExtraViewsOnMapView.swift */; };
+		4CB60EB01E54DFAA000D1FA9 /* MapViewDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB60EAF1E54DFAA000D1FA9 /* MapViewDrawing.swift */; };
+		4CC6CD8C1E52416500CF25F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CD8B1E52416500CF25F6 /* AppDelegate.swift */; };
+		4CC6CD911E52416600CF25F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC6CD8F1E52416600CF25F6 /* Main.storyboard */; };
+		4CC6CD941E52416600CF25F6 /* BitGrayTrial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CD921E52416600CF25F6 /* BitGrayTrial.xcdatamodeld */; };
+		4CC6CD961E52416600CF25F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC6CD951E52416600CF25F6 /* Assets.xcassets */; };
+		4CC6CD991E52416600CF25F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC6CD971E52416600CF25F6 /* LaunchScreen.storyboard */; };
+		4CC6CDA41E52416600CF25F6 /* BitGrayTrialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDA31E52416600CF25F6 /* BitGrayTrialTests.swift */; };
+		4CC6CDAF1E52416600CF25F6 /* BitGrayTrialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDAE1E52416600CF25F6 /* BitGrayTrialUITests.swift */; };
+		4CC6CDBD1E52456A00CF25F6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDBC1E52456A00CF25F6 /* MapViewController.swift */; };
+		4CC6CDBE1E52456A00CF25F6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDBC1E52456A00CF25F6 /* MapViewController.swift */; };
+		4CC6CDBF1E52456A00CF25F6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDBC1E52456A00CF25F6 /* MapViewController.swift */; };
+		4CC6CDC21E52483400CF25F6 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC6CDC11E52483400CF25F6 /* MapKit.framework */; };
+		4CC6CDC41E524C4C00CF25F6 /* MapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDC31E524C4C00CF25F6 /* MapViewPresenter.swift */; };
+		4CC6CDC51E524C4C00CF25F6 /* MapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDC31E524C4C00CF25F6 /* MapViewPresenter.swift */; };
+		4CC6CDC61E524C4C00CF25F6 /* MapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDC31E524C4C00CF25F6 /* MapViewPresenter.swift */; };
+		4CC6CDC81E524D7500CF25F6 /* MapViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDC71E524D7500CF25F6 /* MapViewService.swift */; };
+		4CC6CDC91E524D7500CF25F6 /* MapViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDC71E524D7500CF25F6 /* MapViewService.swift */; };
+		4CC6CDCA1E524D7500CF25F6 /* MapViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDC71E524D7500CF25F6 /* MapViewService.swift */; };
+		4CC6CDCC1E5257C500CF25F6 /* JsonMappedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDCB1E5257C500CF25F6 /* JsonMappedData.swift */; };
+		4CC6CDCD1E5257C500CF25F6 /* JsonMappedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDCB1E5257C500CF25F6 /* JsonMappedData.swift */; };
+		4CC6CDCE1E5257C500CF25F6 /* JsonMappedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC6CDCB1E5257C500CF25F6 /* JsonMappedData.swift */; };
+		9C4045B3A43EDAF5B5F9B12E /* Pods_BitGrayTrialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C389E4AD27DE73F20F850AA /* Pods_BitGrayTrialUITests.framework */; };
+		CEB35161C0C62CEC7D2B4BBD /* Pods_BitGrayTrialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF69117F8B97F4A8401F0CE /* Pods_BitGrayTrialTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CC6CDA01E52416600CF25F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC6CD801E52416500CF25F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CC6CD871E52416500CF25F6;
+			remoteInfo = BitGrayTrial;
+		};
+		4CC6CDAB1E52416600CF25F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CC6CD801E52416500CF25F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CC6CD871E52416500CF25F6;
+			remoteInfo = BitGrayTrial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14C47F81883564B76DD9332A /* Pods-BitGrayTrialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitGrayTrialUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitGrayTrialUITests/Pods-BitGrayTrialUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B25D986F0639BE1AD4E4D78 /* Pods-BitGrayTrialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitGrayTrialUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitGrayTrialUITests/Pods-BitGrayTrialUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C8611031E53A3B600E75F99 /* AnotationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotationHelper.swift; sourceTree = "<group>"; };
+		4CB60EAD1E54DF4A000D1FA9 /* ExtraViewsOnMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraViewsOnMapView.swift; sourceTree = "<group>"; };
+		4CB60EAF1E54DFAA000D1FA9 /* MapViewDrawing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewDrawing.swift; sourceTree = "<group>"; };
+		4CC6CD881E52416500CF25F6 /* BitGrayTrial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitGrayTrial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC6CD8B1E52416500CF25F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CC6CD901E52416600CF25F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CC6CD931E52416600CF25F6 /* BitGrayTrial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitGrayTrial.xcdatamodel; sourceTree = "<group>"; };
+		4CC6CD951E52416600CF25F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CC6CD981E52416600CF25F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CC6CD9A1E52416600CF25F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC6CD9F1E52416600CF25F6 /* BitGrayTrialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitGrayTrialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC6CDA31E52416600CF25F6 /* BitGrayTrialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitGrayTrialTests.swift; sourceTree = "<group>"; };
+		4CC6CDA51E52416600CF25F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC6CDAA1E52416600CF25F6 /* BitGrayTrialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitGrayTrialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CC6CDAE1E52416600CF25F6 /* BitGrayTrialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitGrayTrialUITests.swift; sourceTree = "<group>"; };
+		4CC6CDB01E52416600CF25F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CC6CDBC1E52456A00CF25F6 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = ../MapViewController.swift; sourceTree = "<group>"; };
+		4CC6CDC11E52483400CF25F6 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		4CC6CDC31E524C4C00CF25F6 /* MapViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewPresenter.swift; sourceTree = "<group>"; };
+		4CC6CDC71E524D7500CF25F6 /* MapViewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewService.swift; sourceTree = "<group>"; };
+		4CC6CDCB1E5257C500CF25F6 /* JsonMappedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonMappedData.swift; sourceTree = "<group>"; };
+		4E715DF61157DCA2ACB6B48D /* Pods-BitGrayTrialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitGrayTrialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitGrayTrialTests/Pods-BitGrayTrialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		88C38A646C3DBFC48A261FB4 /* Pods_BitGrayTrial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitGrayTrial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C389E4AD27DE73F20F850AA /* Pods_BitGrayTrialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitGrayTrialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A038C7193A10297D71A85B34 /* Pods-BitGrayTrialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitGrayTrialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitGrayTrialTests/Pods-BitGrayTrialTests.release.xcconfig"; sourceTree = "<group>"; };
+		E19FD740D201C21DA57991C8 /* Pods-BitGrayTrial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitGrayTrial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitGrayTrial/Pods-BitGrayTrial.debug.xcconfig"; sourceTree = "<group>"; };
+		FB6D81935D6319E6CCADC061 /* Pods-BitGrayTrial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitGrayTrial.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitGrayTrial/Pods-BitGrayTrial.release.xcconfig"; sourceTree = "<group>"; };
+		FFF69117F8B97F4A8401F0CE /* Pods_BitGrayTrialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitGrayTrialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CC6CD851E52416500CF25F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC6CDC21E52483400CF25F6 /* MapKit.framework in Frameworks */,
+				0A420AA9893A5861F675DC11 /* Pods_BitGrayTrial.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC6CD9C1E52416600CF25F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEB35161C0C62CEC7D2B4BBD /* Pods_BitGrayTrialTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC6CDA71E52416600CF25F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C4045B3A43EDAF5B5F9B12E /* Pods_BitGrayTrialUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CB60EB11E54E64A000D1FA9 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6CDC71E524D7500CF25F6 /* MapViewService.swift */,
+			);
+			name = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		4CB60EB21E54E668000D1FA9 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6CD8B1E52416500CF25F6 /* AppDelegate.swift */,
+				4CC6CD8F1E52416600CF25F6 /* Main.storyboard */,
+				4CC6CD971E52416600CF25F6 /* LaunchScreen.storyboard */,
+				4CC6CD951E52416600CF25F6 /* Assets.xcassets */,
+				4CC6CD9A1E52416600CF25F6 /* Info.plist */,
+				4CC6CD921E52416600CF25F6 /* BitGrayTrial.xcdatamodeld */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		4CB60EB31E54E686000D1FA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6CDBC1E52456A00CF25F6 /* MapViewController.swift */,
+				4CB60EAD1E54DF4A000D1FA9 /* ExtraViewsOnMapView.swift */,
+				4CB60EAF1E54DFAA000D1FA9 /* MapViewDrawing.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4CB60EB41E54E6C1000D1FA9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6CDCB1E5257C500CF25F6 /* JsonMappedData.swift */,
+				4C8611031E53A3B600E75F99 /* AnotationHelper.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		4CB60EB51E54E6FA000D1FA9 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6CDC31E524C4C00CF25F6 /* MapViewPresenter.swift */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		4CB60EB71E54E830000D1FA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CB60EB11E54E64A000D1FA9 /* BusinessLogic */,
+				4CB60EB41E54E6C1000D1FA9 /* Entities */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4CC6CD7F1E52416500CF25F6 = {
+			isa = PBXGroup;
+			children = (
+				4CC6CD8A1E52416500CF25F6 /* BitGrayTrial */,
+				4CC6CDA21E52416600CF25F6 /* BitGrayTrialTests */,
+				4CC6CDAD1E52416600CF25F6 /* BitGrayTrialUITests */,
+				4CC6CD891E52416500CF25F6 /* Products */,
+				4CC6CDC01E52483400CF25F6 /* Frameworks */,
+				D65977B7690422FA1CF1182B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4CC6CD891E52416500CF25F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6CD881E52416500CF25F6 /* BitGrayTrial.app */,
+				4CC6CD9F1E52416600CF25F6 /* BitGrayTrialTests.xctest */,
+				4CC6CDAA1E52416600CF25F6 /* BitGrayTrialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CC6CD8A1E52416500CF25F6 /* BitGrayTrial */ = {
+			isa = PBXGroup;
+			children = (
+				4CB60EB71E54E830000D1FA9 /* Model */,
+				4CB60EB31E54E686000D1FA9 /* Views */,
+				4CB60EB51E54E6FA000D1FA9 /* Presenters */,
+				4CB60EB21E54E668000D1FA9 /* General */,
+			);
+			path = BitGrayTrial;
+			sourceTree = "<group>";
+		};
+		4CC6CDA21E52416600CF25F6 /* BitGrayTrialTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6CDA31E52416600CF25F6 /* BitGrayTrialTests.swift */,
+				4CC6CDA51E52416600CF25F6 /* Info.plist */,
+			);
+			path = BitGrayTrialTests;
+			sourceTree = "<group>";
+		};
+		4CC6CDAD1E52416600CF25F6 /* BitGrayTrialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6CDAE1E52416600CF25F6 /* BitGrayTrialUITests.swift */,
+				4CC6CDB01E52416600CF25F6 /* Info.plist */,
+			);
+			path = BitGrayTrialUITests;
+			sourceTree = "<group>";
+		};
+		4CC6CDC01E52483400CF25F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CC6CDC11E52483400CF25F6 /* MapKit.framework */,
+				88C38A646C3DBFC48A261FB4 /* Pods_BitGrayTrial.framework */,
+				FFF69117F8B97F4A8401F0CE /* Pods_BitGrayTrialTests.framework */,
+				9C389E4AD27DE73F20F850AA /* Pods_BitGrayTrialUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D65977B7690422FA1CF1182B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E19FD740D201C21DA57991C8 /* Pods-BitGrayTrial.debug.xcconfig */,
+				FB6D81935D6319E6CCADC061 /* Pods-BitGrayTrial.release.xcconfig */,
+				4E715DF61157DCA2ACB6B48D /* Pods-BitGrayTrialTests.debug.xcconfig */,
+				A038C7193A10297D71A85B34 /* Pods-BitGrayTrialTests.release.xcconfig */,
+				4B25D986F0639BE1AD4E4D78 /* Pods-BitGrayTrialUITests.debug.xcconfig */,
+				14C47F81883564B76DD9332A /* Pods-BitGrayTrialUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CC6CD871E52416500CF25F6 /* BitGrayTrial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC6CDB31E52416600CF25F6 /* Build configuration list for PBXNativeTarget "BitGrayTrial" */;
+			buildPhases = (
+				459D373D31D0D141E8F9D045 /* [CP] Check Pods Manifest.lock */,
+				4CC6CD841E52416500CF25F6 /* Sources */,
+				4CC6CD851E52416500CF25F6 /* Frameworks */,
+				4CC6CD861E52416500CF25F6 /* Resources */,
+				C1160DB99EC8C2C3E40792D0 /* [CP] Embed Pods Frameworks */,
+				5C911160304E1D1603AE96BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitGrayTrial;
+			productName = BitGrayTrial;
+			productReference = 4CC6CD881E52416500CF25F6 /* BitGrayTrial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CC6CD9E1E52416600CF25F6 /* BitGrayTrialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC6CDB61E52416600CF25F6 /* Build configuration list for PBXNativeTarget "BitGrayTrialTests" */;
+			buildPhases = (
+				9DC868D062EA558780475B4D /* [CP] Check Pods Manifest.lock */,
+				4CC6CD9B1E52416600CF25F6 /* Sources */,
+				4CC6CD9C1E52416600CF25F6 /* Frameworks */,
+				4CC6CD9D1E52416600CF25F6 /* Resources */,
+				FA548704B136F0BD1198B7DB /* [CP] Embed Pods Frameworks */,
+				57ABDE1430ABB2B96B071203 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CC6CDA11E52416600CF25F6 /* PBXTargetDependency */,
+			);
+			name = BitGrayTrialTests;
+			productName = BitGrayTrialTests;
+			productReference = 4CC6CD9F1E52416600CF25F6 /* BitGrayTrialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4CC6CDA91E52416600CF25F6 /* BitGrayTrialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CC6CDB91E52416600CF25F6 /* Build configuration list for PBXNativeTarget "BitGrayTrialUITests" */;
+			buildPhases = (
+				BCC68AC5ED8786071ED02657 /* [CP] Check Pods Manifest.lock */,
+				4CC6CDA61E52416600CF25F6 /* Sources */,
+				4CC6CDA71E52416600CF25F6 /* Frameworks */,
+				4CC6CDA81E52416600CF25F6 /* Resources */,
+				678B97482EB4F869014F0EA3 /* [CP] Embed Pods Frameworks */,
+				E741A6770A5A88BB537900E3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CC6CDAC1E52416600CF25F6 /* PBXTargetDependency */,
+			);
+			name = BitGrayTrialUITests;
+			productName = BitGrayTrialUITests;
+			productReference = 4CC6CDAA1E52416600CF25F6 /* BitGrayTrialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CC6CD801E52416500CF25F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jefferson Vélez Escobar";
+				TargetAttributes = {
+					4CC6CD871E52416500CF25F6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W373342TBY;
+						ProvisioningStyle = Automatic;
+					};
+					4CC6CD9E1E52416600CF25F6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W373342TBY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4CC6CD871E52416500CF25F6;
+					};
+					4CC6CDA91E52416600CF25F6 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = W373342TBY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4CC6CD871E52416500CF25F6;
+					};
+				};
+			};
+			buildConfigurationList = 4CC6CD831E52416500CF25F6 /* Build configuration list for PBXProject "BitGrayTrial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CC6CD7F1E52416500CF25F6;
+			productRefGroup = 4CC6CD891E52416500CF25F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CC6CD871E52416500CF25F6 /* BitGrayTrial */,
+				4CC6CD9E1E52416600CF25F6 /* BitGrayTrialTests */,
+				4CC6CDA91E52416600CF25F6 /* BitGrayTrialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CC6CD861E52416500CF25F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC6CD991E52416600CF25F6 /* LaunchScreen.storyboard in Resources */,
+				4CC6CD961E52416600CF25F6 /* Assets.xcassets in Resources */,
+				4CC6CD911E52416600CF25F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC6CD9D1E52416600CF25F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC6CDA81E52416600CF25F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		459D373D31D0D141E8F9D045 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		57ABDE1430ABB2B96B071203 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitGrayTrialTests/Pods-BitGrayTrialTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C911160304E1D1603AE96BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitGrayTrial/Pods-BitGrayTrial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		678B97482EB4F869014F0EA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitGrayTrialUITests/Pods-BitGrayTrialUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DC868D062EA558780475B4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC68AC5ED8786071ED02657 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1160DB99EC8C2C3E40792D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitGrayTrial/Pods-BitGrayTrial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E741A6770A5A88BB537900E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitGrayTrialUITests/Pods-BitGrayTrialUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA548704B136F0BD1198B7DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitGrayTrialTests/Pods-BitGrayTrialTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CC6CD841E52416500CF25F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC6CD941E52416600CF25F6 /* BitGrayTrial.xcdatamodeld in Sources */,
+				4CB60EAE1E54DF4A000D1FA9 /* ExtraViewsOnMapView.swift in Sources */,
+				4CB60EB01E54DFAA000D1FA9 /* MapViewDrawing.swift in Sources */,
+				4CC6CDBD1E52456A00CF25F6 /* MapViewController.swift in Sources */,
+				4CC6CDC41E524C4C00CF25F6 /* MapViewPresenter.swift in Sources */,
+				4CC6CDC81E524D7500CF25F6 /* MapViewService.swift in Sources */,
+				4CC6CDCC1E5257C500CF25F6 /* JsonMappedData.swift in Sources */,
+				4C8611041E53A3B600E75F99 /* AnotationHelper.swift in Sources */,
+				4CC6CD8C1E52416500CF25F6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC6CD9B1E52416600CF25F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC6CDC51E524C4C00CF25F6 /* MapViewPresenter.swift in Sources */,
+				4CC6CDC91E524D7500CF25F6 /* MapViewService.swift in Sources */,
+				4CC6CDCD1E5257C500CF25F6 /* JsonMappedData.swift in Sources */,
+				4CC6CDA41E52416600CF25F6 /* BitGrayTrialTests.swift in Sources */,
+				4CC6CDBE1E52456A00CF25F6 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CC6CDA61E52416600CF25F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC6CDC61E524C4C00CF25F6 /* MapViewPresenter.swift in Sources */,
+				4CC6CDCA1E524D7500CF25F6 /* MapViewService.swift in Sources */,
+				4CC6CDCE1E5257C500CF25F6 /* JsonMappedData.swift in Sources */,
+				4CC6CDAF1E52416600CF25F6 /* BitGrayTrialUITests.swift in Sources */,
+				4CC6CDBF1E52456A00CF25F6 /* MapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CC6CDA11E52416600CF25F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CC6CD871E52416500CF25F6 /* BitGrayTrial */;
+			targetProxy = 4CC6CDA01E52416600CF25F6 /* PBXContainerItemProxy */;
+		};
+		4CC6CDAC1E52416600CF25F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CC6CD871E52416500CF25F6 /* BitGrayTrial */;
+			targetProxy = 4CC6CDAB1E52416600CF25F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CC6CD8F1E52416600CF25F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC6CD901E52416600CF25F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CC6CD971E52416600CF25F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CC6CD981E52416600CF25F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CC6CDB11E52416600CF25F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4CC6CDB21E52416600CF25F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CC6CDB41E52416600CF25F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19FD740D201C21DA57991C8 /* Pods-BitGrayTrial.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W373342TBY;
+				INFOPLIST_FILE = BitGrayTrial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jeff.BitGrayTrial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4CC6CDB51E52416600CF25F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB6D81935D6319E6CCADC061 /* Pods-BitGrayTrial.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W373342TBY;
+				INFOPLIST_FILE = BitGrayTrial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jeff.BitGrayTrial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4CC6CDB71E52416600CF25F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E715DF61157DCA2ACB6B48D /* Pods-BitGrayTrialTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W373342TBY;
+				INFOPLIST_FILE = BitGrayTrialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jeff.BitGrayTrialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitGrayTrial.app/BitGrayTrial";
+			};
+			name = Debug;
+		};
+		4CC6CDB81E52416600CF25F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A038C7193A10297D71A85B34 /* Pods-BitGrayTrialTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = W373342TBY;
+				INFOPLIST_FILE = BitGrayTrialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jeff.BitGrayTrialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitGrayTrial.app/BitGrayTrial";
+			};
+			name = Release;
+		};
+		4CC6CDBA1E52416600CF25F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B25D986F0639BE1AD4E4D78 /* Pods-BitGrayTrialUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = W373342TBY;
+				INFOPLIST_FILE = BitGrayTrialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jeff.BitGrayTrialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BitGrayTrial;
+			};
+			name = Debug;
+		};
+		4CC6CDBB1E52416600CF25F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14C47F81883564B76DD9332A /* Pods-BitGrayTrialUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = W373342TBY;
+				INFOPLIST_FILE = BitGrayTrialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Jeff.BitGrayTrialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = BitGrayTrial;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CC6CD831E52416500CF25F6 /* Build configuration list for PBXProject "BitGrayTrial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC6CDB11E52416600CF25F6 /* Debug */,
+				4CC6CDB21E52416600CF25F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC6CDB31E52416600CF25F6 /* Build configuration list for PBXNativeTarget "BitGrayTrial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC6CDB41E52416600CF25F6 /* Debug */,
+				4CC6CDB51E52416600CF25F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC6CDB61E52416600CF25F6 /* Build configuration list for PBXNativeTarget "BitGrayTrialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC6CDB71E52416600CF25F6 /* Debug */,
+				4CC6CDB81E52416600CF25F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CC6CDB91E52416600CF25F6 /* Build configuration list for PBXNativeTarget "BitGrayTrialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CC6CDBA1E52416600CF25F6 /* Debug */,
+				4CC6CDBB1E52416600CF25F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CC6CD921E52416600CF25F6 /* BitGrayTrial.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CC6CD931E52416600CF25F6 /* BitGrayTrial.xcdatamodel */,
+			);
+			currentVersion = 4CC6CD931E52416600CF25F6 /* BitGrayTrial.xcdatamodel */;
+			path = BitGrayTrial.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4CC6CD801E52416500CF25F6 /* Project object */;
+}

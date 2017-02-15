@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UZi-0m-H1p">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="db1-Yg-SRf">
+            <objects>
+                <viewController id="UZi-0m-H1p" customClass="MapViewController" customModule="BitGrayTrial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zg0-sy-JP8"/>
+                        <viewControllerLayoutGuide type="bottom" id="g6r-F6-vW8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2rZ-t2-PkW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ncg-xG-4NW">
+                                <rect key="frame" x="16" y="20" width="288" height="454.5"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rrD-vg-1Ud">
+                                <rect key="frame" x="16" y="474.5" width="288" height="93.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a78-9D-42y">
+                                        <rect key="frame" x="93.5" y="31.5" width="100" height="30"/>
+                                        <state key="normal" title="Ubicar usuario"/>
+                                        <connections>
+                                            <action selector="placeRandomUser:" destination="UZi-0m-H1p" eventType="touchUpInside" id="fZL-BU-Dse"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="a78-9D-42y" firstAttribute="centerX" secondItem="rrD-vg-1Ud" secondAttribute="centerX" id="6iu-dn-gRS"/>
+                                    <constraint firstItem="a78-9D-42y" firstAttribute="centerY" secondItem="rrD-vg-1Ud" secondAttribute="centerY" id="GfS-UT-Oms"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rrD-vg-1Ud" firstAttribute="trailing" secondItem="2rZ-t2-PkW" secondAttribute="trailingMargin" id="3Vt-eg-OEb"/>
+                            <constraint firstItem="Ncg-xG-4NW" firstAttribute="top" secondItem="Zg0-sy-JP8" secondAttribute="bottom" id="8mL-4Z-ZEg"/>
+                            <constraint firstItem="Ncg-xG-4NW" firstAttribute="height" secondItem="2rZ-t2-PkW" secondAttribute="height" multiplier="0.8" id="Bgh-m7-sBg"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="rrD-vg-1Ud" secondAttribute="bottom" id="DN5-Jq-SDZ"/>
+                            <constraint firstItem="rrD-vg-1Ud" firstAttribute="top" secondItem="Ncg-xG-4NW" secondAttribute="bottom" id="NJ4-ND-GIS"/>
+                            <constraint firstItem="rrD-vg-1Ud" firstAttribute="leading" secondItem="2rZ-t2-PkW" secondAttribute="leadingMargin" id="Vgz-wJ-JzI"/>
+                            <constraint firstItem="Ncg-xG-4NW" firstAttribute="leading" secondItem="2rZ-t2-PkW" secondAttribute="leadingMargin" id="f7T-JF-gFo"/>
+                            <constraint firstItem="Ncg-xG-4NW" firstAttribute="trailing" secondItem="2rZ-t2-PkW" secondAttribute="trailingMargin" id="j72-Hd-UmH"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="map" destination="Ncg-xG-4NW" id="r6W-F8-Zsq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6H1-k1-xnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.400000000000006" y="0.44977511244377816"/>
+        </scene>
+    </scenes>
+</document>
